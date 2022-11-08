@@ -554,7 +554,7 @@ spec:
             - "/intercept.sh"
           env:
             - name: PREFECT_SERVER__APOLLO_URL
-              value: http://prefect-server-apollo:4200/graphql
+              value: http://run.nasajonsistemas.com.br/graphql
           ports:
             - name: http
               containerPort: 8080
