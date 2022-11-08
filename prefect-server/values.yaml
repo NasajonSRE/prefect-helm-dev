@@ -227,7 +227,7 @@ apollo:
     port: 4200
 
   ingress:
-    enabled: false
+    enabled: true
 
     # For Kubernetes >= 1.18 you should specify the ingress-controller via the field ingressClassName
     # See https://kubernetes.io/blog/2020/04/02/improvements-to-the-ingress-api-in-kubernetes-1.18/#specifying-the-class-of-an-ingress
@@ -238,11 +238,11 @@ apollo:
 
     ## Hosts must be provided if Ingress is enabled.
     hosts:
-      []
+      [run.nasajonsistemas.com.br]
       # - prefecthq-apollo.domain.com
 
     ## Path to use for ingress rules
-    path: /
+    path: /graphql
 
     ## TLS configuration for Prefect Ingress
     ## Secret must be manually created in the namespace
