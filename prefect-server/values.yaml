@@ -277,7 +277,7 @@ ui:
   # GraphQL server. This location must be accessible by the
   # user of the API because the browser is making requests
   # (not the ui server)
-  apolloApiUrl: http://run.nasajonsistemas.com.br/graphql
+  apolloApiUrl: https://run.nasajonsistemas.com.br/graphql
 
   service:
     # type defines the service type and defaults to LoadBalancer
