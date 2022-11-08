@@ -277,7 +277,7 @@ ui:
   # GraphQL server. This location must be accessible by the
   # user of the API because the browser is making requests
   # (not the ui server)
-  apolloApiUrl: http://localhost:4200/graphql
+  apolloApiUrl: http://run.nasajonsistemas.com.br:4200/graphql
 
   service:
     # type defines the service type and defaults to LoadBalancer
@@ -297,7 +297,7 @@ ui:
 
     ## Hosts must be provided if Ingress is enabled.
     hosts:
-      [run.nasajon.in]
+      [run.nasajonsistemas.com.br]
       # - prefecthq-ui.domain.com
 
     ## Path to use for ingress rules
