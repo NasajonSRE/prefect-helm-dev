@@ -350,7 +350,7 @@ towel:
 # schedule flows as jobs in the cluster
 agent:
   # enabled determines if the Prefect Kubernetes agent is deployed
-  enabled: false
+  enabled: true
 
   # prefectLabels defines what scheduling labels (not K8s labels) should
   # be associated with the agent
