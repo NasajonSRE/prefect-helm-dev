@@ -14,13 +14,13 @@ serverVersionTag: null
 # services, including the agent and default tenant creation job.
 # This value is automatically pinned on chart release to the latest
 # core version.
-prefectVersionTag: "latest"
+prefectVersionTag: "1.4.0"
 
 # uiVersionTag configures the default tag for the Prefect UI service.
 # It is defined here for easy update using `sed` for automation.
 # This value is automatically pinned on chart release to the latest
 # ui version.
-uiVersionTag: "latest"
+uiVersionTag: "2022-09-14"
 
 # includeChartNameInComponents determines if the name of the chart should
 # be included in generated component names. By default, it will not
@@ -109,7 +109,7 @@ postgresql:
     # the subchart deployment for production deployments.
     persistence:
       enabled: false
-      size: 1Gi
+      size: 8Gi
 
   # useSubChart determines if a this chart should deploy a
   # user-manager postgres database or use an externally managed
@@ -242,7 +242,7 @@ apollo:
       # - prefecthq-apollo.domain.com
 
     ## Path to use for ingress rules
-    path: /graphql
+    path: /
 
     ## TLS configuration for Prefect Ingress
     ## Secret must be manually created in the namespace
@@ -425,7 +425,7 @@ serviceAccount:
 jobs:
   # create a tenant so that Agent and UI are immediately usable after installation
   createTenant:
-    enabled: true
+    enabled: false
 
     # tenant sets the details of the created tenant
     tenant:
