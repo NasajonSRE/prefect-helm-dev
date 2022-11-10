@@ -425,7 +425,7 @@ serviceAccount:
 jobs:
   # create a tenant so that Agent and UI are immediately usable after installation
   createTenant:
-    enabled: false
+    enabled: true
 
     # tenant sets the details of the created tenant
     tenant:
