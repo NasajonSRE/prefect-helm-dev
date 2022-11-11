@@ -452,7 +452,7 @@ jobs:
     backoffLimit: 10
 
 configMap:
-  path: ~/.prefect
+  path: /root/.prefect
   data:
     config.toml: |
       [server]
