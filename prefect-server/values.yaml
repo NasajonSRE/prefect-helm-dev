@@ -450,3 +450,10 @@ jobs:
     resources: {}
     # backoffLimit configures the number of retries; needed to wait for the server to become available
     backoffLimit: 10
+
+configMap:
+  path: ~/.prefect
+  data:
+    config.toml: |
+      [server]
+      host="https://run.nasajon.sistemas.com.br"
