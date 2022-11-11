@@ -359,10 +359,10 @@ agent:
   # jobTemplateFilePath defines which template to use for the agent's jobs. Defaults
   # to an empty string, which will use the default template.
   # reference: https://docs.prefect.io/orchestration/agents/kubernetes.html#custom-job-template
-  jobTemplateFilePath: ""
+  jobTemplateFilePath: "/root/.prefect"
 
   # mount job template file from Kubernetes configmap. Filename in configmap must match the filename in jobTemplateFilePath.
-  jobTemplateFileConfigMap: ""
+  jobTemplateFileConfigMap: "conf.toml"
 
   # image configures the container image for the agent deployment
   image:
@@ -456,4 +456,4 @@ configMap:
   data:
     config.toml: |
       [server]
-      host="https://run.nasajon.sistemas.com.br"
+      host="https://run.nasajonsistemas.com.br"
