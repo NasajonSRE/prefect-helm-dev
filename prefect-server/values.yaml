@@ -362,7 +362,7 @@ agent:
   jobTemplateFilePath: "/root/.prefect"
 
   # mount job template file from Kubernetes configmap. Filename in configmap must match the filename in jobTemplateFilePath.
-  jobTemplateFileConfigMap: "conf.toml"
+  jobTemplateFileConfigMap: "config.toml"
 
   # image configures the container image for the agent deployment
   image:
