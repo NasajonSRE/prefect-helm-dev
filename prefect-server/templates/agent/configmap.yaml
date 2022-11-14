@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ include "prefect-server.nameField" (merge (dict "component" "agent") .)}}
+  name: {{ .Values.agent.jobTemplateFileConfigMap }}
   labels: 
     {{- include "prefect-server.commonLabels" . | nindent 4 }}
 {{- with .Values.configMap.data }}
