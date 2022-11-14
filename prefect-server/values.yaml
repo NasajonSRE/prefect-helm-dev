@@ -242,7 +242,7 @@ apollo:
       # - prefecthq-apollo.domain.com
 
     ## Path to use for ingress rules
-    path: /
+    path: /graphql
 
     ## TLS configuration for Prefect Ingress
     ## Secret must be manually created in the namespace
