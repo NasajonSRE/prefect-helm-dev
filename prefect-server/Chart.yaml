@@ -14,4 +14,4 @@ name: prefect-server
 sources:
 - https://github.com/PrefectHQ/server
 type: application
-version: 2022.09.24
+version: 2022.09.25
